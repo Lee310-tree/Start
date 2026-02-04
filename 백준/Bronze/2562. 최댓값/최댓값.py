@@ -1,7 +1,7 @@
-numbers = []
-for _ in range(9):
+number = []
+for x in range(9):
     i = int(input())
-    numbers.append(i)
+    number.append(i)
     
-print(max(numbers))
-print(numbers.index(max(numbers))+1)
+print(max(number))
+print(number.index(max(number))+1)    
