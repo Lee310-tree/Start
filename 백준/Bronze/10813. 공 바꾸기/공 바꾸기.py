@@ -1,9 +1,8 @@
-N, M = map(int, input().split())
-baskets = list(range(1, N+1))
+N,M = map(int, input().split())
+basket = [i for i in range(1, N+1)]
 
-for change in range(M):
+for i in range(M):
     i, j = map(int, input().split())
-    baskets[i-1], baskets[j-1] = baskets[j-1], baskets[i-1]
-
-for basket in baskets:
-    print(basket, end=' ')
+    basket[i-1], basket[j-1] = basket[j-1], basket[i-1]
+for i in range(N):
+    print(basket[i], end =' ')
