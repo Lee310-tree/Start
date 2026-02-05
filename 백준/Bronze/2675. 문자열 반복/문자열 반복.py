@@ -1,7 +1,7 @@
-n = int(input())
-
-for _ in range(n):
-    cnt, word = input().split()
-    for x in word:
-        print(x*int(cnt), end='') 
-    print()  
+T = int(input())
+for _ in range(T):
+    A, B = input().split()
+    for i in B:
+        print(i*int(A), end = '')
+    print()
+        
