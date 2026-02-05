@@ -1,9 +1,6 @@
-n = []
+number = [int(input()) for i in range(10)]
 
-for _ in range(10):
-    a = int(input())
-    b = a % 42
-    n.append(b)
-
-s = set(n)
-print(len(s))
+for i in range(10):
+    number[i] = number[i] % 42
+    
+print(len(list(set(number))))
