@@ -1,5 +1,5 @@
 T = int(input())
- 
+
 for i in range(T):
-    test = input()
-    print(test[0] + test[-1])
+    case = input()
+    print(case[0]+case[-1])
